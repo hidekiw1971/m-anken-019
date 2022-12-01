@@ -87,7 +87,6 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: rgb(17, 17, 17);
 }
@@ -198,6 +197,12 @@ select::-ms-expand {
   color: rgb(255, 255, 255);
 }
 
+.card:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.5" intercept="0.25" /><feFuncG type="linear" slope="0.5" intercept="0.25" /><feFuncB type="linear" slope="0.5" intercept="0.25" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: contrast(50%);
+          filter: contrast(50%);
+}
+
 .card-photo {
   position: relative;
 }
@@ -212,6 +217,8 @@ select::-ms-expand {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 .card-title {
   font-size: 18px;
