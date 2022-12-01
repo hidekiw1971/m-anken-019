@@ -1,0 +1,15 @@
+@use "global" as *;
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  background: rgba(51, 51, 51, 1);
+  width: rem(360);
+  padding: rem(15) rem(0);
+  font: $base-font-family;
+  font-size: rem(20);
+  font-weight: $normal;
+  color: rgba(255, 255, 255, 1);
+  border: solid 1px #fff;
+  @include mq(md) {
+  }
+}
