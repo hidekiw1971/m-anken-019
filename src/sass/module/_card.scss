@@ -18,6 +18,11 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.card:hover img {
+  filter: contrast(50%);
+  // opacity: 0.5;
+}
+
 .card-photo {
   position: relative;
   @include mq(md) {
@@ -37,7 +42,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  transition: $animation;
   @include mq(md) {
   }
 }
