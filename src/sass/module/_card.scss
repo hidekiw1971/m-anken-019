@@ -1,0 +1,94 @@
+@use "global" as *;
+.card {
+  width: rem(350);
+  background: rgba(255, 255, 255, 1);
+  transition: $animation;
+  @include mq(md) {
+  }
+}
+
+.card:hover {
+  background: rgba(51, 51, 51, 1);
+  // color: rgba(255, 255, 255, 1);
+}
+
+.card:hover .card-title,
+.card:hover .card-description,
+.card:hover .card-datetime {
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-photo {
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.card-photo::before {
+  content: "";
+  display: block;
+  padding-top: calc(233 / 350 * 100%);
+  @include mq(md) {
+  }
+}
+
+.card-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mq(md) {
+  }
+}
+
+.card-title {
+  font-size: rem(18);
+  font-weight: $midium;
+  line-height: calc(35 / 18);
+  letter-spacing: rem(1);
+  @include mq(md) {
+  }
+}
+
+.card-description {
+  font-size: rem(14);
+  font-weight: $normal;
+  margin-bottom: rem(4);
+  @include mq(md) {
+  }
+}
+
+.card-category {
+  display: inline-block;
+  background: rgba(255, 234, 46, 1);
+  font-size: rem(14);
+  font-weight: $normal;
+  padding: rem(2) rem(5.5);
+  white-space: nowrap;
+  @include mq(md) {
+  }
+}
+
+.card-datetime {
+  display: inline-block;
+  font-size: rem(14);
+  font-weight: $normal;
+  @include mq(md) {
+  }
+}
+
+.card-contens {
+  padding: 0 rem(24);
+  padding-top: rem(4);
+  padding-bottom: rem(16);
+  @include mq(md) {
+  }
+}
+
+.card-subContens {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+  }
+}

@@ -1,0 +1,267 @@
+@charset "UTF-8";
+body {
+  font-family: "font-family: 'Noto Sans JP', sans-serif;";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.4545454545vw;
+  }
+}
+@media (min-width: 1100px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: rgb(17, 17, 17);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  background: rgb(51, 51, 51);
+  width: 360px;
+  width: 22.5rem;
+  padding: 15px 0px;
+  padding: 0.9375rem 0rem;
+  font: "font-family: 'Noto Sans JP', sans-serif;";
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  border: solid 1px #fff;
+}
+.card {
+  width: 350px;
+  width: 21.875rem;
+  background: rgb(255, 255, 255);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.card:hover {
+  background: rgb(51, 51, 51);
+}
+
+.card:hover .card-title,
+.card:hover .card-description,
+.card:hover .card-datetime {
+  color: rgb(255, 255, 255);
+}
+
+.card-photo {
+  position: relative;
+}
+.card-photo::before {
+  content: "";
+  display: block;
+  padding-top: 66.5714285714%;
+}
+.card-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.9444444444;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
+}
+.card-description {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+}
+.card-category {
+  display: inline-block;
+  background: rgb(255, 234, 46);
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 2px 5.5px;
+  padding: 0.125rem 0.34375rem;
+  white-space: nowrap;
+}
+.card-datetime {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.card-contens {
+  padding: 0 24px;
+  padding: 0 1.5rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+.card-subContens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.kensho {
+  color: rgb(255, 255, 255);
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
