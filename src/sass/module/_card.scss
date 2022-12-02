@@ -1,15 +1,43 @@
 @use "global" as *;
 .card {
+  display: inline-block;
   width: rem(350);
   background: rgba(255, 255, 255, 1);
   transition: $animation;
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.card-badge::before {
+  content: "New";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 186, 106, 1);
+  width: rem(60);
+  height: rem(60);
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16 * 100%);
+  letter-spacing: rem(2);
+  position: absolute;
+  top: -23px;
+  left: -14px;
+  z-index: 1;
+  @include mq(md) {
+  }
+}
+
+.card__layout {
+  margin: 0 rem(15);
   @include mq(md) {
   }
 }
 
 .card:hover {
   background: rgba(51, 51, 51, 1);
-  // color: rgba(255, 255, 255, 1);
 }
 
 .card:hover .card-title,
@@ -20,7 +48,6 @@
 
 .card:hover img {
   filter: contrast(50%);
-  // opacity: 0.5;
 }
 
 .card-photo {
@@ -52,6 +79,7 @@
   font-weight: $midium;
   line-height: calc(35 / 18);
   letter-spacing: rem(1);
+  text-align: left;
   @include mq(md) {
   }
 }
@@ -60,6 +88,7 @@
   font-size: rem(14);
   font-weight: $normal;
   margin-bottom: rem(4);
+  text-align: left;
   @include mq(md) {
   }
 }
