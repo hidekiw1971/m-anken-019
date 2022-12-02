@@ -1,0 +1,40 @@
+@use "global" as *;
+.business {
+  display: inline-block;
+  width: rem(375);
+  @include mq(md) {
+  }
+}
+
+.business-photo {
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.business-photo::before {
+  content: "";
+  display: block;
+  width: rem(187.5);
+  padding-top: calc(168 / 187.5 * 100%);
+  color: #fff;
+  @include mq(md) {
+  }
+}
+
+.business-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+  }
+}
+
+.business-photoContents {
+  display: flex;
+  flex-wrap: wrap;
+  width: rem(375);
+  @include mq(md) {
+  }
+}
