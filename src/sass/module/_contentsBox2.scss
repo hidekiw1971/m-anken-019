@@ -1,0 +1,82 @@
+@use "global" as *;
+.contentsBox2 {
+  @include mq(md) {
+  }
+}
+
+.contentsBox2__title {
+  display: block;
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: rem(48);
+  @include mq(md) {
+    font-size: rem(30);
+    font-weight: $normal;
+    line-height: calc(30 / 15.8 * 100%);
+    letter-spacing: rem(0.5);
+  }
+}
+
+.contentsBox2__title::before {
+  content: "Works";
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(249, 248, 113, 0.2);
+  font-size: rem(50);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  @include mq(md) {
+    font-size: rem(110);
+    font-weight: $normal;
+    line-height: normal;
+    letter-spacing: rem(2);
+  }
+}
+
+.contentsBox2__under {
+  background: rgba(51, 51, 51, 1);
+  padding: 0 rem(20);
+  padding-top: rem(24);
+  padding-bottom: rem(21);
+  @include mq(md) {
+  }
+}
+
+.contentsBox2__swiper {
+  @include mq(md) {
+  }
+}
+
+.contentsBox2__under-title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+    font-size: rem(25);
+    font-weight: $normal;
+    line-height: calc(15.8 / 25 * 100%);
+    letter-spacing: rem(0.5);
+  }
+}
+
+.contentsBox2__under-description {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  @include mq(md) {
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: calc(35 / 16 * 100%);
+    letter-spacing: rem(2);
+  }
+}
