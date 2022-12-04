@@ -1,6 +1,50 @@
 @use "global" as *;
 .blog {
   display: block;
+  width: rem(375);
+  margin: 0 auto;
   @include mq(md) {
+    max-width: rem(1280);
+    width: 100%;
+  }
+}
+
+.blog-title {
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 2;
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+    font-size: rem(30);
+    font-weight: $normal;
+    line-height: calc(30 / 15.8 * 100%);
+    letter-spacing: 0.5;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.blog-title::before {
+  content: "Blog";
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  font-size: rem(110);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  color: rgba(249, 248, 113, 0.2);
+  @include mq(md) {
+  }
+}
+
+.blog-contents {
+  display: inline-block;
+  // width: rem(375);
+  @include mq(md) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }

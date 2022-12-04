@@ -52,6 +52,7 @@
 
 .card-photo {
   position: relative;
+  overflow: hidden;
   @include mq(md) {
   }
 }

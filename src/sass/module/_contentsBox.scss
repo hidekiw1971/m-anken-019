@@ -1,0 +1,57 @@
+@use "global" as *;
+.contentsBox {
+  display: inline-block;
+  min-width: rem(375);
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: 0;
+  letter-spacing: rem(2);
+  vertical-align: top;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(1280);
+    width: 100%;
+    font-size: rem(30);
+    font-weight: $normal;
+    line-height: calc(35 / 30 * 100%);
+  }
+}
+
+.contentsBox::before {
+  content: "Content";
+  display: block;
+  font-size: rem(50);
+  color: rgba(249, 248, 113, 0.2);
+  font-weight: $normal;
+  line-height: 0;
+  letter-spacing: rem(2);
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  @include mq(md) {
+    font-size: rem(110);
+    font-weight: $normal;
+    line-height: 0;
+    letter-spacing: rem(2);
+  }
+}
+
+.contentsBox-title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  @include mq(md) {
+    font-size: rem(30);
+    font-weight: $normal;
+    line-height: calc(30 / 35 * 100%);
+    letter-spacing: rem(2);
+  }
+}
