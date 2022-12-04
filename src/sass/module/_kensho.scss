@@ -1,5 +1,50 @@
 @use "global" as *;
 .kensho {
   color: rgba(255, 255, 255, 1);
+}
+
+.box {
   display: block;
+  width: 100%;
+  background: rgba(255, 0, 0, 1);
+}
+
+// 検証コードは以降に追記する。（上のコードは消さない）
+.testBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  @include mq(md) {
+    flex-wrap: nowrap;
+    max-width: rem(1280);
+    width: 100%;
+  }
+}
+
+.test {
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  @include mq(md) {
+  }
+}
+
+.test::before {
+  content: "";
+  display: block;
+  width: rem(400);
+  padding-top: calc(300 / 400 * 100%);
+}
+
+.test img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  object-fit: cover;
+  @include mq(md) {
+  }
 }
