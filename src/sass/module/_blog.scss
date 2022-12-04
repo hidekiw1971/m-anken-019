@@ -3,6 +3,7 @@
   display: block;
   width: rem(375);
   margin: 0 auto;
+  margin-bottom: rem(50);
   @include mq(md) {
     max-width: rem(1280);
     width: 100%;

@@ -173,6 +173,8 @@ select::-ms-expand {
   width: 375px;
   width: 23.4375rem;
   margin: 0 auto;
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .blog {
@@ -310,6 +312,8 @@ select::-ms-expand {
   display: inline-block;
   width: 100%;
   vertical-align: top;
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .business {
@@ -547,8 +551,6 @@ select::-ms-expand {
   font-family: "Noto Sans JP", sans-serif;
   font-family: "Noto Serif JP", serif;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 @media screen and (min-width: 768px) {
   .contentsBox::before {
@@ -572,6 +574,95 @@ select::-ms-expand {
     font-size: 1.875rem;
     font-weight: 400;
     line-height: 85.7142857143%;
+    letter-spacing: 0.125rem;
+  }
+}
+
+.contentsBox2__title {
+  display: block;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .contentsBox2__title {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 189.8734177215%;
+    letter-spacing: 0.03125rem;
+  }
+}
+
+.contentsBox2__title::before {
+  content: "Works";
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(249, 248, 113, .2);
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .contentsBox2__title::before {
+    font-size: 6.875rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+  }
+}
+
+.contentsBox2__under {
+  background: rgb(51, 51, 51);
+  padding: 0 20px;
+  padding: 0 1.25rem;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 21px;
+  padding-bottom: 1.3125rem;
+}
+.contentsBox2__under-title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .contentsBox2__under-title {
+    font-size: 1.5625rem;
+    font-weight: 400;
+    line-height: 63.2%;
+    letter-spacing: 0.03125rem;
+  }
+}
+
+.contentsBox2__under-description {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .contentsBox2__under-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 218.75%;
     letter-spacing: 0.125rem;
   }
 }
@@ -627,5 +718,39 @@ select::-ms-expand {
           transform: translate(-50%, -50%) scale(1.2);
   -o-object-fit: cover;
      object-fit: cover;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(249, 248, 113);
+}
+
+.mySwiper {
+  display: block;
+}
+
+.swiper-pagination {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  display: block;
+  width: 375px;
+  width: 23.4375rem;
+  padding-top: 69.6%;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=styles.css.map */
