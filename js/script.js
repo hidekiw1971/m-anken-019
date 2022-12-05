@@ -51,6 +51,7 @@ jQuery(function ($) {
   // swiper@8
   var swiper = new Swiper(".mySwiper", {
     loop: true,
+    slidesPerView: 1,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,

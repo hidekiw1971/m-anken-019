@@ -1,5 +1,6 @@
 @use "global" as *;
 .kensho {
+  display: block;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -10,41 +11,50 @@
 }
 
 // 検証コードは以降に追記する。（上のコードは消さない）
-.testBox {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  @include mq(md) {
-    flex-wrap: nowrap;
-    max-width: rem(1280);
-    width: 100%;
-  }
+.mySwiper {
 }
 
-.test {
-  vertical-align: top;
-  display: inline-block;
+.mySwiper-box {
+  display: block;
+  width: rem(300);
+  background: rgba(255, 105, 180, 1);
+}
+
+.swiper-slide {
   position: relative;
-  width: 50%;
   overflow: hidden;
-  @include mq(md) {
-  }
 }
 
-.test::before {
+.swiper-slide::before {
   content: "";
   display: block;
-  width: rem(400);
-  padding-top: calc(300 / 400 * 100%);
+  width: rem(300);
+  padding-top: calc(220 / 300 * 100%);
 }
 
-.test img {
+.swiper-slide img {
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  object-fit: cover;
-  @include mq(md) {
-  }
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.swiper-pagination {
+}
+
+.mySwiper-box__under {
+  position: relative;
+  display: block;
+  height: rem(25);
+  background: rgba(255, 255, 255, 1);
+  z-index: 99;
+}
+
+.swiper-wrapper {
+}
+
+.mySwiper-box__bottom {
+  display: block;
+  height: rem(50);
+  background: rgba(255, 105, 180, 1);
 }
