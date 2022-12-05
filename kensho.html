@@ -23,9 +23,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap"
-    rel="stylesheet"> <!-- /css google font -->
+    rel="stylesheet">
+  <!-- /css google font -->
+  <!-- css swiper@8 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- /css swiper@8 -->
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- js swiper@8 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- /js swiper@8 -->
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
@@ -37,14 +44,27 @@
   <div class="box">up-text-box</div>
   <!-- /上隙間確認 -->
 
-  <!-- contents-box -->
-  <div class="contentsBox">
-    <h2 class="contentsBox-title">事業内容</h2>
-    <div class="contentsBox-under">
-      <!-- insert -->
+  <!-- swiper -->
+  <div class="mySwiper-box">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/productionArchivements-01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/productionArchivements-02.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/productionArchivements-03.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="mySwiper-box__bottom"></div>
     </div>
+    <!-- <div class="mySwiper-box__under"> -->
+    <!-- </div> -->
   </div>
-  <!-- contents-box -->
+  <!-- /swiper -->
 
   <!-- 下隙間確認 -->
   <div class="box">under-text-box</div>

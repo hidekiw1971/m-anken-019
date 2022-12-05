@@ -668,6 +668,7 @@ select::-ms-expand {
 }
 
 .kensho {
+  display: block;
   color: rgb(255, 255, 255);
 }
 
@@ -677,48 +678,50 @@ select::-ms-expand {
   background: rgb(255, 0, 0);
 }
 
-.testBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .testBox {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    max-width: 80rem;
-    width: 100%;
-  }
+.mySwiper-box {
+  display: block;
+  width: 300px;
+  width: 18.75rem;
+  background: rgb(255, 105, 180);
 }
 
-.test {
-  vertical-align: top;
-  display: inline-block;
+.swiper-slide {
   position: relative;
-  width: 50%;
   overflow: hidden;
 }
-.test::before {
+
+.swiper-slide::before {
   content: "";
   display: block;
-  width: 400px;
-  width: 25rem;
-  padding-top: 75%;
+  width: 300px;
+  width: 18.75rem;
+  padding-top: 73.3333333333%;
 }
 
-.test img {
+.swiper-slide img {
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1.2);
-          transform: translate(-50%, -50%) scale(1.2);
-  -o-object-fit: cover;
-     object-fit: cover;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
+
+.mySwiper-box__under {
+  position: relative;
+  display: block;
+  height: 25px;
+  height: 1.5625rem;
+  background: rgb(255, 255, 255);
+  z-index: 99;
+}
+
+.mySwiper-box__bottom {
+  display: block;
+  height: 50px;
+  height: 3.125rem;
+  background: rgb(255, 105, 180);
+}
+
 .swiper-pagination-bullet-active {
   background: rgb(249, 248, 113);
 }

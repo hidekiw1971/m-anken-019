@@ -1,0 +1,54 @@
+body {
+  font-family: "font-family: 'Noto Sans JP', sans-serif;";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(249, 248, 113);
+}
+
+.mySwiper {
+  display: block;
+}
+
+.swiper-pagination {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  display: block;
+  width: 375px;
+  width: 23.4375rem;
+  padding-top: 69.6%;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=swipwe.css.map */
