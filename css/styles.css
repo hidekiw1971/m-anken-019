@@ -678,50 +678,6 @@ select::-ms-expand {
   background: rgb(255, 0, 0);
 }
 
-.mySwiper-box {
-  display: block;
-  width: 300px;
-  width: 18.75rem;
-  background: rgb(255, 105, 180);
-}
-
-.swiper-slide {
-  position: relative;
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  display: block;
-  width: 300px;
-  width: 18.75rem;
-  padding-top: 73.3333333333%;
-}
-
-.swiper-slide img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
-}
-
-.mySwiper-box__under {
-  position: relative;
-  display: block;
-  height: 25px;
-  height: 1.5625rem;
-  background: rgb(255, 255, 255);
-  z-index: 99;
-}
-
-.mySwiper-box__bottom {
-  display: block;
-  height: 50px;
-  height: 3.125rem;
-  background: rgb(255, 105, 180);
-}
-
 .swiper-pagination-bullet-active {
   background: rgb(249, 248, 113);
 }
@@ -753,6 +709,22 @@ select::-ms-expand {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.swiper-pagination__content {
+  display: block;
+  height: 25px;
+  height: 1.5625rem;
+  background: rgb(51, 51, 51);
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  bottom: initial;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
