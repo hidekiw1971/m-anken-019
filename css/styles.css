@@ -692,6 +692,11 @@ select::-ms-expand {
   z-index: 2;
 }
 
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 .swiper-slide {
   position: relative;
   overflow: hidden;
