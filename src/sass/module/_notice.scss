@@ -1,0 +1,46 @@
+@use "global" as *;
+.notice time {
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.notice__category {
+  display: inline-block;
+  width: rem(99);
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  padding: rem(4) 0;
+  //   text-align: center;
+  @include mq(md) {
+  }
+}
+
+.notice__description {
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+  text-align: left;
+  @include mq(md) {
+  }
+}
+
+.notice__contents {
+  display: inline-block;
+  //   text-align: left;
+  @include mq(md) {
+  }
+}

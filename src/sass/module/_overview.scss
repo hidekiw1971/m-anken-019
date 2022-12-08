@@ -1,0 +1,8 @@
+@use "global" as *;
+.overview-title {
+}
+
+.overview-title::before {
+  content: "Overview";
+  display: block;
+}

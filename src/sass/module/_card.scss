@@ -24,14 +24,14 @@
   letter-spacing: rem(2);
   position: absolute;
   top: -23px;
-  left: -14px;
+  left: -8px;
   z-index: 1;
   @include mq(md) {
   }
 }
 
 .card__layout {
-  margin: 0 rem(15);
+  // margin: 0 rem(15);
   @include mq(md) {
   }
 }

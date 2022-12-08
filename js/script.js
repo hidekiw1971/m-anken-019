@@ -49,12 +49,17 @@ jQuery(function ($) {
   });
 
   // swiper@8
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".mySwiper1", {
     loop: true,
     slidesPerView: 1,
+    centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
   });
 

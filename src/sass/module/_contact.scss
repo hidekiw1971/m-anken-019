@@ -1,0 +1,12 @@
+@use "global" as *;
+.contact__title {
+  @include mq(md) {
+  }
+}
+
+.contact__title::before {
+  content: "Contact";
+  display: block;
+  @include mq(md) {
+  }
+}
