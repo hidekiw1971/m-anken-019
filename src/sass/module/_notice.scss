@@ -1,0 +1,131 @@
+@use "global" as *;
+.notice {
+  display: inline-block;
+  min-width: rem(calc(375 - (19 * 2)));
+  width: 100%;
+  padding: 0 rem(19);
+  @include mq(md) {
+    display: flex;
+    min-width: initial;
+    max-width: 1042px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.notice time {
+  display: inline-block;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  margin-right: rem(32);
+  @include mq(md) {
+    margin-right: rem(38);
+  }
+}
+
+.notice__category {
+  display: inline-block;
+  width: rem(99);
+  height: rem(31);
+  margin-bottom: auto;
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  padding: rem(4) 0;
+  text-align: center;
+  @include mq(md) {
+    margin-right: rem(61);
+  }
+}
+
+.notice__description {
+  display: inline-block;
+  min-width: rem(calc(375 - (19 * 2)));
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+  text-align: left;
+  margin-bottom: rem(28);
+  @include mq(md) {
+    max-width: rem(572);
+    width: 100%;
+    margin-right: rem(48);
+  }
+}
+
+.notice__contents {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    display: flex;
+    width: initial;
+  }
+}
+
+// btn
+.notice-btn__layout {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(51, 51, 51, 1);
+  @include mq(md) {
+    width: rem(134);
+    height: rem(30);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.notice-btn__layout::before {
+  content: "";
+  display: block;
+  background: rgba(51, 51, 51, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translatex(-100%);
+  border: 1px solid rgba(51, 51, 51, 1);
+  @include mq(md) {
+  }
+}
+
+.notice-btn__layout:hover::before,
+.notice-btn__layout:hover span {
+  transform: translateX(0%);
+  color: rgba(255, 255, 255, 1);
+}
+
+.notice-btn__layout span {
+  color: rgba(51, 51, 51, 1);
+  @include mq(md) {
+  }
+}
+
+.notice__description-animationLink {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  transition: background-size $animation;
+}
+
+.notice__description-animationLink:hover {
+  background-size: 100% 1px;
+}

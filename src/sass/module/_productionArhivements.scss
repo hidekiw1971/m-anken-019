@@ -1,0 +1,30 @@
+@use "global" as *;
+.productionArhivements {
+  @include mq(md) {
+  }
+}
+
+.productionArhivements__title {
+  @include mq(md) {
+  }
+}
+
+.productionArhivements__title::before {
+  content: "Works";
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(249, 248, 113, 0.2);
+  font-size: rem(50);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(2);
+  top: 0;
+  transform: translateY(rem(20));
+  @include mq(md) {
+    font-size: rem(110);
+    font-weight: $normal;
+    line-height: normal;
+    letter-spacing: rem(2);
+  }
+}

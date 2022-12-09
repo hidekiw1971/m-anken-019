@@ -3,7 +3,7 @@
   background: rgba(249, 248, 113, 1);
 }
 
-.mySwiper {
+.mySwiper1 {
   display: block;
 }
 
@@ -11,6 +11,10 @@
   display: block;
   position: relative;
   z-index: 2;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
 .swiper-slide {
