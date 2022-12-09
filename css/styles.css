@@ -373,6 +373,38 @@ select::-ms-expand {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.business-filter {
+  display: inherit;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.business-filter::before {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  content: "";
+  display: inherit;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100%;
+  z-index: 1;
+}
+
+.business-filter:hover::before {
+  left: 0%;
+}
+
 .business-photoContents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,6 +719,39 @@ select::-ms-expand {
   background: rgb(255, 0, 0);
 }
 
+.mv .swiper-slide {
+  display: block;
+  width: 100%;
+}
+.mv .swiper-slide::before {
+  display: block;
+  min-width: 375px;
+  min-width: 23.4375rem;
+  width: 100%;
+  padding-top: 205.3333333333%;
+}
+.notice {
+  display: inline-block;
+  min-width: 337px;
+  min-width: 21.0625rem;
+  width: 100%;
+  padding: 0 19px;
+  padding: 0 1.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .notice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    min-width: initial;
+    max-width: 1042px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .notice time {
   display: inline-block;
   font-size: 16px;
@@ -695,11 +760,22 @@ select::-ms-expand {
   line-height: normal;
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
+  margin-right: 32px;
+  margin-right: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .notice time {
+    margin-right: 2.375rem;
+  }
+}
+
 .notice__category {
   display: inline-block;
   width: 99px;
   width: 6.1875rem;
+  height: 31px;
+  height: 1.9375rem;
+  margin-bottom: auto;
   border: 1px solid rgb(255, 255, 255);
   font-size: 14px;
   font-size: 0.875rem;
@@ -709,9 +785,19 @@ select::-ms-expand {
   color: rgb(255, 255, 255);
   padding: 4px 0;
   padding: 0.25rem 0;
+  text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .notice__category {
+    margin-right: 3.8125rem;
+  }
+}
+
 .notice__description {
   display: inline-block;
+  min-width: 337px;
+  min-width: 21.0625rem;
+  width: 100%;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
@@ -720,10 +806,84 @@ select::-ms-expand {
   color: rgb(255, 255, 255);
   padding: 0;
   text-align: left;
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
+@media screen and (min-width: 768px) {
+  .notice__description {
+    max-width: 35.75rem;
+    width: 100%;
+    margin-right: 3rem;
+  }
+}
+
 .notice__contents {
   display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .notice__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    width: initial;
+  }
+}
+
+.notice-btn__layout {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(51, 51, 51);
+}
+@media screen and (min-width: 768px) {
+  .notice-btn__layout {
+    width: 8.375rem;
+    height: 1.875rem;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.notice-btn__layout::before {
+  content: "";
+  display: block;
+  background: rgb(51, 51, 51);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translatex(-100%);
+          transform: translatex(-100%);
+  border: 1px solid rgb(51, 51, 51);
+}
+.notice-btn__layout:hover::before,
+.notice-btn__layout:hover span {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  color: rgb(255, 255, 255);
+}
+
+.notice-btn__layout span {
+  color: rgb(51, 51, 51);
+}
+.notice__description-animationLink {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+  background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  -webkit-transition: background-size 0.75s;
+  transition: background-size 0.75s;
+}
+
+.notice__description-animationLink:hover {
+  background-size: 100% 1px;
+}
+
 .overview-title::before {
   content: "Overview";
   display: block;
