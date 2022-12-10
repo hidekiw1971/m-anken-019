@@ -90,8 +90,6 @@ body {
   line-height: 1.5;
   background: rgb(17, 17, 17);
   text-align: center;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -719,6 +717,20 @@ select::-ms-expand {
   background: rgb(255, 0, 0);
 }
 
+.mv {
+  position: relative;
+}
+.mv__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, .2);
+}
+
 .mv .swiper-slide {
   overflow: hidden;
 }
@@ -751,6 +763,55 @@ select::-ms-expand {
 .mv .swiper-slide-active img {
   -webkit-animation: zoomUp 5s linear 0s 1 normal both;
           animation: zoomUp 5s linear 0s 1 normal both;
+}
+
+.mv__contents-title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  display: inline-block;
+}
+.mv__title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.mv__subTitle {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .mv__subTitle {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+  }
 }
 
 .notice {
