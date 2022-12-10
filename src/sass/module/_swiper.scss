@@ -1,49 +1,50 @@
 @use "global" as *;
-.swiper-pagination-bullet-active {
+.contentsBox2 .swiper-pagination-bullet-active {
   background: rgba(249, 248, 113, 1);
 }
 
-.mySwiper1 {
+.contentsBox2 .mySwiper1 {
   display: block;
 }
 
-.swiper-pagination {
+.contentsBox2 .swiper-pagination {
   display: block;
   position: relative;
   z-index: 2;
 }
 
-.swiper-wrapper {
+.contentsBox2 .swiper-wrapper {
   transition-timing-function: linear;
 }
 
-.swiper-slide {
+.contentsBox2 .swiper-slide {
   position: relative;
   overflow: hidden;
 }
 
-.swiper-slide::before {
+.contentsBox2 .swiper-slide::before {
   content: "";
   display: block;
   width: rem(375);
   padding-top: calc(261 / 375 * 100%);
 }
 
-.swiper-slide img {
+.contentsBox2 .swiper-slide img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.swiper-pagination__content {
+.contentsBox2 .swiper-pagination__content {
   display: block;
   height: rem(25);
   //   background: rgba(255, 105, 180, 1);
   background: rgba(51, 51, 51, 1);
 }
 
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+.contentsBox2
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
   //   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,7 +52,7 @@
   transform: translate(-50%, -50%);
 }
 
-.contentsBox2__swiper {
+.contentsBox2 .contentsBox2__swiper {
   @include mq(md) {
   }
 }
