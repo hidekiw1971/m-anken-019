@@ -720,16 +720,39 @@ select::-ms-expand {
 }
 
 .mv .swiper-slide {
-  display: block;
-  width: 100%;
+  overflow: hidden;
 }
-.mv .swiper-slide::before {
+.mv .swiper-slide img {
   display: block;
-  min-width: 375px;
-  min-width: 23.4375rem;
-  width: 100%;
-  padding-top: 205.3333333333%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.mv .swiper-slide-active img {
+  -webkit-animation: zoomUp 5s linear 0s 1 normal both;
+          animation: zoomUp 5s linear 0s 1 normal both;
+}
+
 .notice {
   display: inline-block;
   min-width: 337px;
@@ -914,31 +937,31 @@ select::-ms-expand {
   }
 }
 
-.swiper-pagination-bullet-active {
+.contentsBox2 .swiper-pagination-bullet-active {
   background: rgb(249, 248, 113);
 }
 
-.mySwiper1 {
+.contentsBox2 .mySwiper1 {
   display: block;
 }
 
-.swiper-pagination {
+.contentsBox2 .swiper-pagination {
   display: block;
   position: relative;
   z-index: 2;
 }
 
-.swiper-wrapper {
+.contentsBox2 .swiper-wrapper {
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
 }
 
-.swiper-slide {
+.contentsBox2 .swiper-slide {
   position: relative;
   overflow: hidden;
 }
 
-.swiper-slide::before {
+.contentsBox2 .swiper-slide::before {
   content: "";
   display: block;
   width: 375px;
@@ -946,7 +969,7 @@ select::-ms-expand {
   padding-top: 69.6%;
 }
 
-.swiper-slide img {
+.contentsBox2 .swiper-slide img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -954,14 +977,14 @@ select::-ms-expand {
           transform: translate(-50%, -50%);
 }
 
-.swiper-pagination__content {
+.contentsBox2 .swiper-pagination__content {
   display: block;
   height: 25px;
   height: 1.5625rem;
   background: rgb(51, 51, 51);
 }
 
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+.contentsBox2 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
   top: 50%;
   left: 50%;
   bottom: auto;
