@@ -1,0 +1,34 @@
+@use "global" as *;
+.header {
+  display: block;
+  width: 100%;
+  height: rem(50);
+  background: rgba(17, 17, 17, 0.5);
+  position: fixed;
+  z-index: 10;
+  @include mq(md) {
+  }
+}
+
+.headeer__title-link {
+  display: inline-block;
+  height: inherit;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(70);
+  height: inherit;
+  @include mq(md) {
+  }
+}
+
+.header__wrapper {
+  display: block;
+  height: 100%;
+  margin: 0 rem(22);
+  @include mq(md) {
+  }
+}
