@@ -28,12 +28,10 @@ jQuery(function ($) {
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
+  $(".js-drawerMenu").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
     // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
+    $(".js-drawerMenu").toggleClass("js-drawerMenu-open");
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
