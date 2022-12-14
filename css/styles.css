@@ -827,6 +827,12 @@ select::-ms-expand {
   }
 }
 
+.header__menu-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .header__menu-list a:last-child {
     margin-right: 0rem;
@@ -861,29 +867,54 @@ select::-ms-expand {
 }
 
 @media screen and (min-width: 768px) {
-  .header .header__contact li {
+  .header__contact li {
     background: rgb(255, 255, 255);
     color: rgb(51, 51, 51);
+    position: relative;
   }
 }
 
-.header__contact a {
+.header .header__contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .header__contact a::before {
+  .header .header__contact li::after {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: rgb(17, 17, 17);
+    background: rgb(51, 51, 51);
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 99;
+    left: -100%;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
   }
+}
+
+.header .header__contact li:hover::after {
+  left: 0%;
+}
+
+.header .header__contact span {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.header .header__contact li:hover span {
+  color: rgb(255, 255, 255);
+  z-index: 99;
+}
+
+.header__menu-list p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgb(255, 234, 46);
+          text-decoration-color: rgb(255, 234, 46);
 }
 
 .kensho {
