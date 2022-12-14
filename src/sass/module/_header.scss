@@ -127,6 +127,10 @@
   }
 }
 
+.header__menu-list ul {
+  display: flex;
+}
+
 .header__menu-list a:last-child {
   @include mq(md) {
     margin-right: rem(0);
@@ -154,28 +158,48 @@
   }
 }
 
-.header .header__contact li {
+.header__contact li {
   @include mq(md) {
     background: rgba(255, 255, 255, 1);
     color: rgba(51, 51, 51, 1);
+    position: relative;
   }
 }
 
-.header__contact a {
+.header .header__contact li {
+  display: flex;
   overflow: hidden;
   position: relative;
 }
 
-.header__contact a::before {
+.header .header__contact li::after {
   @include mq(md) {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(17, 17, 17, 1);
+    background: rgba(51, 51, 51, 1);
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 99;
+    left: -100%;
+    transition: $animation;
   }
+}
+
+.header .header__contact li:hover::after {
+  left: 0%;
+}
+
+.header .header__contact span {
+  transition: $animation;
+}
+
+.header .header__contact li:hover span {
+  color: rgba(255, 255, 255, 1);
+  z-index: 99;
+}
+
+.header__menu-list p {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 234, 46, 1);
 }
