@@ -6,12 +6,17 @@ jQuery(function ($) {
 
   // ボタンの表示設定
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
+    var position = $(this).scrollTop();
+    console.log(position);
+    // if ($(this).scrollTop() > 70) {
+    if ($(this).scrollTop() > 1000) {
       // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+      $("header").css("background", "rgba(17, 17, 17, 1)");
+      // topBtn.fadeIn();
     } else {
       // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      $("header").css("background", "rgba(17, 17, 17, 0.5)");
+      // topBtn.fadeOut();
     }
   });
 
