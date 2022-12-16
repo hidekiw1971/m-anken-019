@@ -45,6 +45,13 @@
   }
 }
 
+.header .js-drawerMenu:hover {
+  cursor: pointer;
+  @include mq(md) {
+    display: none;
+  }
+}
+
 .header .js-drawerMenu span {
   display: block;
   width: rem(24);

@@ -10,6 +10,8 @@
 .footer__modify {
   padding: rem(48);
   @include mq(md) {
+    padding-top: rem(32);
+    padding-bottom: rem(16);
   }
 }
 

@@ -1,0 +1,48 @@
+@use "global" as *;
+.js-mobile__menu {
+  position: fixed;
+  bottom: -100%;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  transition: $animation;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.js-mobile__menu-open {
+  bottom: 0%;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.js-mobile__menu p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0.125em;
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.js-mobile__menu a {
+  display: block;
+  margin-bottom: rem(32);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.js-mobile__menu-list {
+  height: 100vh;
+  overflow: auto;
+  padding-top: rem(209);
+  @include mq(md) {
+    display: none;
+  }
+}
