@@ -34,9 +34,8 @@ jQuery(function ($) {
 
   //ドロワーメニュー
   $(".js-drawerMenu").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
     $(".js-drawerMenu").toggleClass("js-drawerMenu-open");
+    $(".js-mobile__menu").toggleClass("js-mobile__menu-open");
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
