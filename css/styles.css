@@ -181,6 +181,12 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .blob__modify {
+    margin-bottom: 6.25rem;
+  }
+}
+
 .blog-title {
   display: inline-block;
   font-size: 20px;
@@ -647,10 +653,31 @@ select::-ms-expand {
 }
 
 .contentsBox2__under {
-  background: rgb(51, 51, 51);
   padding: 0 20px;
   padding: 0 1.25rem;
 }
+@media screen and (min-width: 768px) {
+  .contentsBox2__under {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80rem;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentsBox2__swiper {
+    width: 34.8125rem;
+  }
+}
+
 .contentsBox2__under-title {
   font-size: 20px;
   font-size: 1.25rem;
@@ -696,6 +723,36 @@ select::-ms-expand {
   margin-bottom: 21px;
   margin-bottom: 1.3125rem;
 }
+@media screen and (min-width: 768px) {
+  .contentsBox2__btn-layout {
+    max-width: 22.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentsBox2__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5rem 0;
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, transparent), color-stop(0%, transparent), color-stop(0%, rgb(51, 51, 51)), to(rgb(51, 51, 51)));
+    background: linear-gradient(90deg, transparent 25%, transparent 0%, rgb(51, 51, 51) 0%, rgb(51, 51, 51) 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentsBox2__under-wrapper {
+    text-align: left;
+  }
+}
+
 .footer {
   font-size: 16px;
   font-size: 1rem;
@@ -1452,9 +1509,10 @@ select::-ms-expand {
   height: 25px;
   height: 1.5625rem;
   background: rgb(51, 51, 51);
+  position: relative;
 }
-
-.contentsBox2 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+.contentsBox2 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
   top: 50%;
   left: 50%;
   bottom: auto;

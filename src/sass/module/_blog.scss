@@ -10,6 +10,12 @@
   }
 }
 
+.blob__modify {
+  @include mq(md) {
+    margin-bottom: rem(100);
+  }
+}
+
 .blog-title {
   display: inline-block;
   font-size: rem(20);
