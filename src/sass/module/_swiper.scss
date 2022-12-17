@@ -39,13 +39,17 @@
 .contentsBox2 .swiper-pagination__content {
   display: block;
   height: rem(25);
-  //   background: rgba(255, 105, 180, 1);
+  // background: rgba(255, 105, 180, 1);
   background: rgba(51, 51, 51, 1);
+  position: relative;
+  @include mq(md) {
+  }
 }
 
 .contentsBox2
-  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
-  //   position: absolute;
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  // .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+  position: absolute;
   top: 50%;
   left: 50%;
   bottom: initial;

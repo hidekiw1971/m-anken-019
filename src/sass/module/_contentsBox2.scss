@@ -42,14 +42,19 @@
 }
 
 .contentsBox2__under {
-  background: rgba(51, 51, 51, 1);
   padding: 0 rem(20);
   @include mq(md) {
+    display: flex;
+    max-width: rem(1280);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .contentsBox2__swiper {
   @include mq(md) {
+    width: rem(557);
   }
 }
 
@@ -65,6 +70,7 @@
     font-weight: $normal;
     line-height: calc(15.8 / 25 * 100%);
     letter-spacing: rem(0.5);
+    // text-align: left;
   }
 }
 
@@ -87,5 +93,29 @@
 .contentsBox2__btn-layout {
   margin-bottom: rem(21);
   @include mq(md) {
+    max-width: rem(360);
+    width: 100%;
+  }
+}
+
+.contentsBox2__contents {
+  @include mq(md) {
+    display: flex;
+    padding: rem(80) 0;
+    background: linear-gradient(
+      90deg,
+      transparent 25%,
+      transparent 0%,
+      rgba(51, 51, 51, 1) 0%,
+      rgba(51, 51, 51, 1) 100%
+    );
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contentsBox2__under-wrapper {
+  @include mq(md) {
+    text-align: left;
   }
 }
