@@ -1,8 +1,21 @@
 @use "global" as *;
-.overview-title {
+.overview__title {
 }
 
-.overview-title::before {
+.overview__title::before {
   content: "Overview";
   display: block;
+}
+
+.overview__contents {
+  @include mq(md) {
+    flex-direction: row-reverse;
+    background: linear-gradient(
+      90deg,
+      rgba(51, 51, 51, 1) 70%,
+      rgba(51, 51, 51, 1) 0%,
+      transparent 0%,
+      transparent 100%
+    );
+  }
 }

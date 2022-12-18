@@ -1,4 +1,9 @@
 @use "global" as *;
+.contact {
+  background: rgba(51, 51, 51, 1);
+  @include mq(md) {
+  }
+}
 .contact__title {
   @include mq(md) {
   }
@@ -8,5 +13,19 @@
   content: "Contact";
   display: block;
   @include mq(md) {
+  }
+}
+
+.contentsBox2__under.contact__under {
+  @include mq(md) {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.contact__under-wrapper.contentsBox2__under-wrapper {
+  @include mq(md) {
+    text-align: center;
   }
 }

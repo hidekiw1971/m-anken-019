@@ -536,10 +536,27 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.contact {
+  background: rgb(51, 51, 51);
+}
 .contact__title::before {
   content: "Contact";
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .contentsBox2__under.contact__under {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__under-wrapper.contentsBox2__under-wrapper {
+    text-align: center;
+  }
+}
+
 .contentsBox {
   display: inline-block;
   min-width: 375px;
@@ -655,13 +672,14 @@ select::-ms-expand {
 .contentsBox2__under {
   padding: 0 20px;
   padding: 0 1.25rem;
+  background: rgb(51, 51, 51);
 }
 @media screen and (min-width: 768px) {
   .contentsBox2__under {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 80rem;
+    max-width: 34.375rem;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -736,8 +754,8 @@ select::-ms-expand {
     display: -ms-flexbox;
     display: flex;
     padding: 5rem 0;
-    background: -webkit-gradient(linear, left top, right top, color-stop(25%, transparent), color-stop(0%, transparent), color-stop(0%, rgb(51, 51, 51)), to(rgb(51, 51, 51)));
-    background: linear-gradient(90deg, transparent 25%, transparent 0%, rgb(51, 51, 51) 0%, rgb(51, 51, 51) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0%, transparent), color-stop(0%, rgb(51, 51, 51)), to(rgb(51, 51, 51)));
+    background: linear-gradient(90deg, transparent 30%, transparent 0%, rgb(51, 51, 51) 0%, rgb(51, 51, 51) 100%);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1434,9 +1452,20 @@ select::-ms-expand {
   background-size: 100% 1px;
 }
 
-.overview-title::before {
+.overview__title::before {
   content: "Overview";
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .overview__contents {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgb(51, 51, 51)), color-stop(0%, rgb(51, 51, 51)), color-stop(0%, transparent), to(transparent));
+    background: linear-gradient(90deg, rgb(51, 51, 51) 70%, rgb(51, 51, 51) 0%, transparent 0%, transparent 100%);
+  }
 }
 
 .productionArhivements__title::before {
@@ -1470,6 +1499,14 @@ select::-ms-expand {
 
 .contentsBox2 .mySwiper1 {
   display: block;
+  width: 557px;
+  width: 34.8125rem;
+}
+
+.contentsBox2 .mySwiper2 {
+  display: block;
+  width: 557px;
+  width: 34.8125rem;
 }
 
 .contentsBox2 .swiper-pagination {
@@ -1511,6 +1548,12 @@ select::-ms-expand {
   background: rgb(51, 51, 51);
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .contentsBox2 .swiper-pagination__content {
+    background: transparent;
+  }
+}
+
 .contentsBox2 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
   top: 50%;
