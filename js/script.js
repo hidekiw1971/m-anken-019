@@ -64,6 +64,19 @@ jQuery(function ($) {
     },
   });
 
+  var swiper = new Swiper(".mySwiper2", {
+    loop: false,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+    slidesPerView: 1,
+    centeredSlides: true,
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
+  });
+
   var swiper = new Swiper(".mvSwiper", {
     loop: true,
     effect: "fade",
