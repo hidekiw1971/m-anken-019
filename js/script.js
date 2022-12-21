@@ -4,8 +4,9 @@ jQuery(function ($) {
   var topBtn = $(".pagetop");
   topBtn.hide();
 
-  // ボタンの表示設定
+  // headerの表示設定(index)
   $(window).scroll(function () {
+    // var position = $(this).scrollTop();
     var position = $(this).scrollTop();
     console.log(position);
     // if ($(this).scrollTop() > 70) {
@@ -19,6 +20,8 @@ jQuery(function ($) {
       // topBtn.fadeOut();
     }
   });
+
+  // header-subの表示設定(index以外)
 
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {

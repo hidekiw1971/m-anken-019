@@ -1,0 +1,35 @@
+@use "global" as *;
+.breadcrumb {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: rem(0.0625);
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.breadcrumb_inner {
+  margin: 0 rem(20);
+  @include mq(md) {
+  }
+}
+
+.breadcrumb ul {
+  display: flex;
+  @include mq(md) {
+  }
+}
+
+.breadcrumb__modify {
+  margin-bottom: rem(85);
+  @include mq(md) {
+  }
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "\003e";
+  margin: rem(10) rem(10);
+  @include mq(md) {
+  }
+}
