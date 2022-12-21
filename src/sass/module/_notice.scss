@@ -11,6 +11,13 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    justify-content: center;
+  }
+}
+
+.notice__modify {
+  margin-bottom: rem(120);
+  @include mq(md) {
   }
 }
 

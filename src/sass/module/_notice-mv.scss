@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.mvSwiper-notice {
+  height: rem(370);
+  @include mq(md) {
+  }
+}
+
+.notice-mv.mv.swiper-slide img {
+  @include mq(md) {
+    height: initial;
+  }
+}
+
+.mv.notice-mv {
+  margin-bottom: 16px;
+  @include mq(md) {
+  }
+}

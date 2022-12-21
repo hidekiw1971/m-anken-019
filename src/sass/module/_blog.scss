@@ -50,8 +50,10 @@
   display: inline-block;
   // width: rem(375);
   @include mq(md) {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: rem(350) rem(350) rem(350);
+    grid-template-rows: rem(416);
+    gap: rem(25);
     justify-content: center;
   }
 }
