@@ -915,6 +915,8 @@ select::-ms-expand {
   background: rgba(17, 17, 17, .5);
   position: fixed;
   z-index: 10;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 .headeer__title-link {
   display: block;
@@ -1225,6 +1227,12 @@ select::-ms-expand {
   display: block;
   width: 100%;
   background: rgb(255, 0, 0);
+}
+
+.s-test {
+  color: #fff;
+  position: fixed;
+  z-index: 20;
 }
 
 .line {

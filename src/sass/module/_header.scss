@@ -6,6 +6,7 @@
   background: rgba(17, 17, 17, 0.5);
   position: fixed;
   z-index: 10;
+  transition: $animation;
   @include mq(md) {
   }
 }
