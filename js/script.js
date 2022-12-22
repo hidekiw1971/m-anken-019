@@ -7,8 +7,7 @@ jQuery(function ($) {
   // headerの表示設定(index)
   $(window).scroll(function () {
     // var position = $(this).scrollTop();
-    var position = $(this).scrollTop();
-    console.log(position);
+    // console.log(position);
     // if ($(this).scrollTop() > 70) {
     if ($(this).scrollTop() > 1000) {
       // 指定px以上のスクロールでボタンを表示
@@ -22,6 +21,16 @@ jQuery(function ($) {
   });
 
   // header-subの表示設定(index以外)
+  var variable = $(".header-sub");
+  $(window).on("scroll", function () {
+    // var position = $(this).scrollTop();
+    // console.log(position);
+    if ($(this).scrollTop() > 300) {
+      variable.css("background", "rgba(17, 17, 17, 1)");
+    } else {
+      variable.css("background", "rgba(17, 17, 17, 0.5)");
+    }
+  });
 
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
