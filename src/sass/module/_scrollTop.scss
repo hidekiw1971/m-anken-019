@@ -1,0 +1,26 @@
+@use "global" as *;
+.scrollTop {
+  display: inline-block;
+  width: rem(45);
+  height: rem(45);
+  background: rgba(251, 251, 251, 1);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: rem(20);
+  @include mq(md) {
+  }
+}
+
+.scrollTop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bi-arrow-up-circle {
+  font-size: 200%;
+  color: rgba(1, 1, 1, 1);
+  @include mq(md) {
+  }
+}
