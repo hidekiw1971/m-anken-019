@@ -1,0 +1,15 @@
+@use "global" as *;
+.wp-pagenavi {
+  @include mq(md) {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.wp-pagenavi > .page,
+.wp-pagenavi > .current {
+  margin-right: rem(16);
+}
+
+.wp-pagenavi > .page:not(:last-child) {
+  margin-right: rem(0);
+}
