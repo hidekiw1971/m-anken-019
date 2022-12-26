@@ -1,15 +1,119 @@
 @use "global" as *;
 .wp-pagenavi {
+  display: none;
   @include mq(md) {
+    display: block;
+  }
+}
+
+.wp-pagenavi__modify {
+  @include mq(md) {
+    height: rem(24);
+    margin-bottom: rem(150);
+  }
+}
+
+.wp-pagenavi > a,
+span {
+  @include mq(md) {
+    border: solid 1px rgba(255, 255, 255, 1);
+  }
+}
+
+.item {
+  @include mq(md) {
+    display: inline-block;
+    width: rem(24);
+    margin-right: rem(16);
+    position: relative;
+    overflow: hidden;
     color: rgba(255, 255, 255, 1);
   }
 }
 
-.wp-pagenavi > .page,
-.wp-pagenavi > .current {
-  margin-right: rem(16);
+.item::before {
+  @include mq(md) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: $animation;
+  }
 }
 
-.wp-pagenavi > .page:not(:last-child) {
-  margin-right: rem(0);
+.item:hover::before {
+  @include mq(md) {
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.item:hover {
+  @include mq(md) {
+    color: rgba(51, 51, 51, 1);
+    transition: $animation;
+  }
+}
+
+.lastItem {
+  @include mq(md) {
+    margin-right: rem(0);
+  }
+}
+
+.leftEnd,
+.rightEnd {
+  display: inline-block;
+  width: rem(71);
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 1);
+}
+
+.leftEnd::before,
+.rightEnd::before {
+  @include mq(md) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: $animation;
+  }
+}
+
+.leftEnd:hover::before,
+.rightEnd:hover::before {
+  @include mq(md) {
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.leftEnd:hover,
+.rightEnd:hover {
+  @include mq(md) {
+  }
+  color: rgba(51, 51, 51, 1);
+  transition: $animation;
+}
+
+.leftEnd {
+  @include mq(md) {
+    margin-right: rem(24);
+  }
+}
+
+.rightEnd {
+  @include mq(md) {
+    margin-left: rem(24);
+  }
 }
