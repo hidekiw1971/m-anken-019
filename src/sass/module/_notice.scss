@@ -130,9 +130,16 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 0 1px;
-  transition: background-size $animation;
+  transition: $animation;
+  // transition: background-size $animation;
 }
 
-.notice__description-animationLink:hover {
+.notice__description:hover > .notice__description-animationLink {
   background-size: 100% 1px;
+  // color: rgba(249, 248, 113, 1);
+}
+
+.notice__description:hover > .notice__description-animationLinkNotice {
+  background-size: 0% 0px;
+  color: rgba(249, 248, 113, 1);
 }
