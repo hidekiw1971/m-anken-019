@@ -797,6 +797,10 @@ select::-ms-expand {
   }
 }
 
+.corporate > div > h2,
+.corporate > div > p {
+  color: rgb(255, 255, 255);
+}
 .footer {
   font-size: 16px;
   font-size: 1rem;
@@ -1552,12 +1556,17 @@ select::-ms-expand {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 0 1px;
-  -webkit-transition: background-size 0.75s;
-  transition: background-size 0.75s;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
-.notice__description-animationLink:hover {
+.notice__description:hover > .notice__description-animationLink {
   background-size: 100% 1px;
+}
+
+.notice__description:hover > .notice__description-animationLinkNotice {
+  background-size: 0% 0px;
+  color: rgb(249, 248, 113);
 }
 
 .overview__title::before {
@@ -1713,7 +1722,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .wp-pagenavi > a,
-  span {
+  .wp-pagenabi > span {
     border: solid 1px rgb(255, 255, 255);
   }
 }
@@ -1816,5 +1825,10 @@ select::-ms-expand {
   .rightEnd {
     margin-left: 1.5rem;
   }
+}
+
+.current {
+  background: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,7 @@
+@use "global" as *;
+.corporate > div > h2,
+.corporate > div > p {
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}

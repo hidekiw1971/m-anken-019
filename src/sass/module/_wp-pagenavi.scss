@@ -14,7 +14,7 @@
 }
 
 .wp-pagenavi > a,
-span {
+.wp-pagenabi > span {
   @include mq(md) {
     border: solid 1px rgba(255, 255, 255, 1);
   }
@@ -116,4 +116,9 @@ span {
   @include mq(md) {
     margin-left: rem(24);
   }
+}
+
+.current {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(51, 51, 51, 1);
 }
