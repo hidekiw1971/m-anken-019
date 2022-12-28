@@ -92,6 +92,7 @@ jQuery(function ($) {
   var swiper = new Swiper(".mvSwiper", {
     loop: true,
     effect: "fade",
+    speed: 2000,
     slidesPerView: 1,
     centeredSlides: true,
     autoplay: {
