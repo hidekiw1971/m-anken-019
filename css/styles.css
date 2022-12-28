@@ -1335,9 +1335,11 @@ select::-ms-expand {
             transform: scale(1.15);
   }
 }
-.mv .swiper-slide-active img {
-  -webkit-animation: zoomUp 5s linear 0s 1 normal both;
-          animation: zoomUp 5s linear 0s 1 normal both;
+.mv .swiper-slide-active img,
+.mv .swiper-slide-duplicate-active img,
+.mv .swiper-slide-prev img {
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
 }
 
 .mv__contents-title {
