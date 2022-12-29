@@ -7,6 +7,7 @@
 }
 
 .notice-mv.mv.swiper-slide img {
+  height: 100%;
   @include mq(md) {
     height: initial;
   }
@@ -15,5 +16,14 @@
 .mv.notice-mv {
   margin-bottom: 16px;
   @include mq(md) {
+  }
+}
+
+.notice-mv.mv.swiper-slide img {
+  @include mq(md) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

@@ -1,7 +1,127 @@
 @use "global" as *;
+.corporate {
+  @include mq(md) {
+  }
+}
+
+.corporate__modify {
+  display: block;
+  margin: 0 rem(20);
+  @include mq(md) {
+    margin-bottom: rem(150);
+  }
+}
+
+.corporatePhilosophy {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: rem(80);
+  @include mq(md) {
+    display: block;
+    max-width: rem(1090);
+    width: 100%;
+    margin-bottom: rem(150);
+  }
+}
+
+.corporatePhilosophy > h2,
+.corporatePhilosophy__contents > h2 {
+  margin-bottom: rem(24);
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.corporatePhilosophy > h2 {
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+.corporatePhilosophy > p,
+.corporatePhilosophy__contents > p {
+  text-align: left;
+  @include mq(md) {
+    margin: 0;
+  }
+}
+
 .corporate > div > h2,
-.corporate > div > p {
+.corporate > div > p,
+.corporatePhilosophy__contents > h2,
+.corporatePhilosophy__contents > p {
   color: rgba(255, 255, 255, 1);
   @include mq(md) {
+  }
+}
+
+.corporate > div > h2,
+.corporatePhilosophy__contents > h2 {
+  font-size: rem(25);
+  font-weight: $normal;
+  line-height: calc(35 / 25);
+  letter-spacing: 0.083em;
+  @include mq(md) {
+  }
+}
+
+.corporate > div > p,
+.corporatePhilosophy__contents > p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16);
+  letter-spacing: 0.125em;
+  @include mq(md) {
+  }
+}
+
+.corporatePhilosophy__contentsBox > figure {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin: initial;
+  }
+}
+
+.corporatePhilosophy__contentsBox {
+  @include mq(md) {
+    display: flex;
+    max-width: rem(1090);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.corporatePhilosophy__contentsBox > figure,
+.corporatePhilosophy__contentsBox > div {
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.corporatePhilosophy__contentsBox > figure {
+  @include mq(md) {
+    margin-right: rem(30);
+  }
+}
+
+.corporatePhilosophy__contentsBox-reverse > figure {
+  @include mq(md) {
+    margin-right: rem(0);
+    margin-left: rem(30);
+  }
+}
+
+.corporatePhilosophy__contentsBox-reverse {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.corporatePhilosophy__contentsBox:not(div:last-child) {
+  @include mq(md) {
+    margin-bottom: rem(104);
   }
 }

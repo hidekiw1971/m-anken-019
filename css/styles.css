@@ -797,10 +797,146 @@ select::-ms-expand {
   }
 }
 
+.corporate__modify {
+  display: block;
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .corporate__modify {
+    margin-bottom: 9.375rem;
+  }
+}
+
+.corporatePhilosophy {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy {
+    display: block;
+    max-width: 68.125rem;
+    width: 100%;
+    margin-bottom: 9.375rem;
+  }
+}
+
+.corporatePhilosophy > h2,
+.corporatePhilosophy__contents > h2 {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy > h2,
+  .corporatePhilosophy__contents > h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy > h2 {
+    text-align: center;
+  }
+}
+
+.corporatePhilosophy > p,
+.corporatePhilosophy__contents > p {
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy > p,
+  .corporatePhilosophy__contents > p {
+    margin: 0;
+  }
+}
+
 .corporate > div > h2,
-.corporate > div > p {
+.corporate > div > p,
+.corporatePhilosophy__contents > h2,
+.corporatePhilosophy__contents > p {
   color: rgb(255, 255, 255);
 }
+.corporate > div > h2,
+.corporatePhilosophy__contents > h2 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.083em;
+}
+.corporate > div > p,
+.corporatePhilosophy__contents > p {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.1875;
+  letter-spacing: 0.125em;
+}
+.corporatePhilosophy__contentsBox > figure {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox > figure {
+    margin: 0;
+    margin: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 68.125rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox > figure,
+  .corporatePhilosophy__contentsBox > div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox > figure {
+    margin-right: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox-reverse > figure {
+    margin-right: 0rem;
+    margin-left: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporatePhilosophy__contentsBox:not(div:last-child) {
+    margin-bottom: 6.5rem;
+  }
+}
+
 .footer {
   font-size: 16px;
   font-size: 1rem;
@@ -1395,6 +1531,9 @@ select::-ms-expand {
   height: 370px;
   height: 23.125rem;
 }
+.notice-mv.mv.swiper-slide img {
+  height: 100%;
+}
 @media screen and (min-width: 768px) {
   .notice-mv.mv.swiper-slide img {
     height: auto;
@@ -1405,6 +1544,16 @@ select::-ms-expand {
 .mv.notice-mv {
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .notice-mv.mv.swiper-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .notice {
   display: inline-block;
   min-width: 337px;
