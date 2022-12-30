@@ -67,3 +67,9 @@
   @include mq(md) {
   }
 }
+
+.mvSwiper-achievements {
+  @include mq(md) {
+    height: rem(656);
+  }
+}

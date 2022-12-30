@@ -1,0 +1,162 @@
+@use "global" as *;
+
+.achievementsCategory__modify {
+  max-width: rem(1090);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(md) {
+    position: relative;
+    top: -220px;
+    z-index: 99;
+  }
+}
+
+.achievementsCategory__wrapper {
+  margin: rem(0) rem(20);
+  @include mq(md) {
+  }
+}
+
+.achievements-mv.notice-mv.mv.swiper-slide img {
+  @include mq(md) {
+    top: initial;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.breadcrumb__achievementsModify {
+  @include mq(md) {
+    max-width: rem(1090);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    top: -235px;
+    z-index: 99;
+  }
+}
+
+.achievementsCategory {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0.125em;
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.achievementsCategory__wrapper > ul > li {
+  padding: rem(3) rem(5);
+  margin-bottom: rem(16);
+  @include mq(md) {
+  }
+}
+
+.achievementsCategory ul {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(md) {
+  }
+}
+
+.achievementsCategory__wrapper > ul > li:not(:last-child) {
+  margin-right: rem(24);
+  @include mq(md) {
+  }
+}
+
+.achievementsCategory > ul > li > a {
+  display: block;
+  white-space: nowrap;
+  @include mq(md) {
+  }
+}
+
+.achievementsProductsCard {
+  margin-bottom: rem(48);
+  @include mq(md) {
+    width: 47.5%;
+  }
+  //   margin-right: rem(48);
+}
+
+.achievementsProductsCard figure {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: rem(24);
+  @include mq(md) {
+  }
+}
+
+.achievementsProductsCard figure::before {
+  content: "";
+  display: block;
+  width: rem(375);
+  padding-top: calc(249 / 375 * 100%);
+  @include mq(md) {
+  }
+}
+
+.achievementsProductsCard figure img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  @include mq(md) {
+  }
+}
+
+.achievementsProductsCard h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: rem(20);
+  font-weight: $midium;
+  line-height: calc(35 / 20);
+  letter-spacing: 0.1em;
+  @include mq(md) {
+  }
+}
+
+.achievementsProductsCard figure::after {
+  content: "カテゴリ１";
+  display: inline-block;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: rem(7.5) rem(20);
+  background: rgba(1, 0, 0, 1);
+  @include mq(md) {
+  }
+}
+
+.achievementsProducts {
+  @include mq(md) {
+    display: block;
+    max-width: rem(1090);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.achievementsProducts__wrapper {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.achievementsProductsCard__modify:not(div:nth-child(2n)) {
+  @include mq(md) {
+    margin-right: rem(48);
+  }
+}
+
+.achievementsProducts__modify {
+  @include mq(md) {
+    margin-bottom: rem(104);
+  }
+}
