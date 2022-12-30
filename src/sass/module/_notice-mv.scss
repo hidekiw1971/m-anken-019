@@ -19,7 +19,7 @@
   }
 }
 
-.notice-mv.mv.swiper-slide img {
+.notice-mv .mv .swiper-slide img {
   @include mq(md) {
     position: absolute;
     top: 50%;
@@ -27,3 +27,5 @@
     transform: translate(-50%, -50%);
   }
 }
+
+// setting achevements
