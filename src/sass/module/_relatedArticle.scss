@@ -1,0 +1,115 @@
+@use "global" as *;
+.relatedArticle__modify {
+  max-width: rem(1100);
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: rem(120);
+  @include mq(md) {
+  }
+}
+
+.relatedArticle__wrapper {
+  margin: 0 rem(20);
+  @include mq(md) {
+  }
+}
+
+.relatedArticleContens p {
+  font-size: rem(16);
+  font-weight: $normal;
+  color: rgba(255, 255, 255, 1);
+  line-height: normal;
+  letter-spacing: calc(2 / 16);
+  padding: rem(8) 0;
+  border: solid 1px rgba(255, 255, 255, 1);
+  margin-bottom: rem(32);
+  @include mq(md) {
+  }
+}
+
+.relatedArticleCard {
+  display: block;
+  margin: 0 auto;
+  @include mq(md) {
+  }
+}
+
+.relatedArticleCard:not(div:last-child) {
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: initial;
+    margin-right: rem(24);
+  }
+}
+
+.relatedArticleCard__wrapper {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.relatedArticleContents h3,
+.relatedArticleContents p {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  @include mq(md) {
+  }
+}
+
+.relatedArticleContents h3 {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding: rem(8.5) rem(24);
+  position: relative;
+  top: 17px;
+  left: 10px;
+  background: rgba(1, 0, 0, 1);
+  border-radius: 30px;
+  @include mq(md) {
+  }
+}
+
+.relatedArticleContents p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16);
+  letter-spacing: calc(0.4em / 16);
+  padding: 0 rem(10);
+  padding-top: rem(56);
+  padding-bottom: rem(33);
+  @include mq(md) {
+  }
+}
+
+.relatedArticlePoints__wrapper {
+  margin: 0 rem(20);
+  @include mq(md) {
+  }
+}
+
+.relatedArticleContents {
+  text-align: left;
+  margin-bottom: rem(32);
+  @include mq(md) {
+  }
+}
+
+.relatedArticlePoints__modify {
+  margin-bottom: rem(80);
+  @include mq(md) {
+    max-width: rem(802);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: rem(104);
+  }
+}
+
+.relatedArticleContents h3,
+.relatedArticleContents p {
+  border: solid 1px rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}

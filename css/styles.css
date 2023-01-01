@@ -597,8 +597,9 @@ select::-ms-expand {
 
 .card {
   display: inline-block;
-  width: 350px;
-  width: 21.875rem;
+  max-width: 350px;
+  max-width: 21.875rem;
+  width: 100%;
   background: rgb(255, 255, 255);
   -webkit-transition: 0.75s;
   transition: 0.75s;
@@ -1914,6 +1915,114 @@ select::-ms-expand {
   }
 }
 
+.relatedArticle__modify {
+  max-width: 1100px;
+  max-width: 68.75rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+}
+.relatedArticle__wrapper {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+.relatedArticleContens p {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+  letter-spacing: 0.125;
+  padding: 8px 0;
+  padding: 0.5rem 0;
+  border: solid 1px rgb(255, 255, 255);
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+.relatedArticleCard {
+  display: block;
+  margin: 0 auto;
+}
+.relatedArticleCard:not(div:last-child) {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .relatedArticleCard:not(div:last-child) {
+    margin-bottom: 0;
+    margin-bottom: initial;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .relatedArticleCard__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.relatedArticleContents h3,
+.relatedArticleContents p {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+.relatedArticleContents h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding: 8.5px 24px;
+  padding: 0.53125rem 1.5rem;
+  position: relative;
+  top: 17px;
+  left: 10px;
+  background: rgb(1, 0, 0);
+  border-radius: 30px;
+}
+.relatedArticleContents p {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.1875;
+  letter-spacing: 0.025em;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+  padding-top: 56px;
+  padding-top: 3.5rem;
+  padding-bottom: 33px;
+  padding-bottom: 2.0625rem;
+}
+.relatedArticlePoints__wrapper {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+.relatedArticleContents {
+  text-align: left;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+.relatedArticlePoints__modify {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .relatedArticlePoints__modify {
+    max-width: 50.125rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6.5rem;
+  }
+}
+
+.relatedArticleContents h3,
+.relatedArticleContents p {
+  border: solid 1px rgb(255, 255, 255);
+}
 .scrollTop {
   display: inline-block;
   width: 45px;

@@ -1,7 +1,8 @@
 @use "global" as *;
 .card {
   display: inline-block;
-  width: rem(350);
+  max-width: rem(350);
+  width: 100%;
   background: rgba(255, 255, 255, 1);
   transition: $animation;
   position: relative;
