@@ -319,6 +319,19 @@ select::-ms-expand {
   }
 }
 
+.achivementsDetailsMv__contents {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+.achivementsDetailsMv__wrapper {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+  text-align: left;
+}
+.achivementsDetailsMvSwiper {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
 .blog {
   display: block;
   width: 375px;
@@ -413,6 +426,43 @@ select::-ms-expand {
   content: ">";
   margin: 10px 10px;
   margin: 0.625rem 0.625rem;
+}
+.breadcrumb__achivementsDetailsModify {
+  padding-top: 66px;
+  padding-top: 4.125rem;
+}
+.achivementsDetailsMv__wrapper > h3,
+.achivementsDetailsMv__wrapper > div > time,
+.achivementsDetailsMv__wrapper > div > p {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.achivementsDetailsMv__wrapper > h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+}
+.achivementsDetailsMv__wrapper > div > time {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.01875;
+  letter-spacing: 0.02em;
+  margin-right: 30px;
+  margin-right: 1.875rem;
+}
+.achivementsDetailsMv__wrapper > div > p {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.125em;
+  padding: 8.5px 20px;
+  padding: 0.53125rem 1.25rem;
+  border: solid 1px rgb(255, 255, 255);
+  display: inline-block;
 }
 .btn {
   display: inline-block;

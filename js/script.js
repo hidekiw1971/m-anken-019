@@ -101,5 +101,14 @@ jQuery(function ($) {
     },
   });
 
+  // achievements-details.html swiper
+  const swiper = new Swiper(".achivementsDetailsMvSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
   // ↓消さない
 });

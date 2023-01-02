@@ -160,3 +160,23 @@
     margin-bottom: rem(104);
   }
 }
+
+.achivementsDetailsMv__contents {
+  margin-bottom: rem(16);
+  @include mq(md) {
+  }
+}
+
+.achivementsDetailsMv__wrapper {
+  margin: 0 rem(20);
+  text-align: left;
+  @include mq(md) {
+  }
+}
+
+.achivementsDetailsMvSwiper {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  @include mq(md) {
+  }
+}
