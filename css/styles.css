@@ -319,6 +319,10 @@ select::-ms-expand {
   }
 }
 
+.achivementsDetailsMv {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
 .achivementsDetailsMv__contents {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -331,6 +335,52 @@ select::-ms-expand {
 .achivementsDetailsMvSwiper {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .achivementsDetailsMvSwiper {
+    margin: 0;
+    margin: initial;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.achivementsDetailsMvSwiperThumbs {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
+@media screen and (min-width: 768px) {
+  .achivementsDetailsMvSwiperThumbs {
+    margin: 0;
+    margin: initial;
+  }
+}
+
+.achivementsDetailsMvSwiperThumbs .swiper-slide {
+  width: 163px;
+  width: 10.1875rem;
+}
+.achivementsDetailsMvSwiper .swiper-button-prev,
+.achivementsDetailsMvSwiper .swiper-button-next {
+  background: rgb(1, 0, 0);
+  width: 50px;
+  width: 3.125rem;
+  height: 50px;
+  height: 3.125rem;
+  border-radius: 1.875rem;
+}
+.achivementsDetailsMvSwiper .swiper-button-prev::after,
+.achivementsDetailsMvSwiper .swiper-button-next::after {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  color: rgb(255, 234, 46);
+}
+.achivementsDetailsMv__modify {
+  max-width: 801px;
+  max-width: 50.0625rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .blog {
   display: block;
@@ -2173,6 +2223,42 @@ select::-ms-expand {
   }
 }
 
+.achivementsDetailsMvSwiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+.achivementsDetailsMvSwiper .swiper-slide::before {
+  content: "";
+  display: block;
+  padding-top: 66.9333333333%;
+  background: rgb(255, 255, 255);
+}
+.achivementsDetailsMvSwiper .swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+.achivementsDetailsMvSwiperThumbs .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+.achivementsDetailsMvSwiperThumbs .swiper-slide::before {
+  content: "";
+  display: block;
+  padding-top: 66.9333333333%;
+  background: rgb(255, 255, 255);
+}
+.achivementsDetailsMvSwiperThumbs .swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
 .wp-pagenavi {
   display: none;
 }

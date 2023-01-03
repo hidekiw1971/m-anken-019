@@ -161,6 +161,12 @@
   }
 }
 
+.achivementsDetailsMv {
+  margin-bottom: rem(32);
+  @include mq(md) {
+  }
+}
+
 .achivementsDetailsMv__contents {
   margin-bottom: rem(16);
   @include mq(md) {
@@ -177,6 +183,49 @@
 .achivementsDetailsMvSwiper {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  margin-bottom: rem(32);
+  @include mq(md) {
+    margin: initial;
+    margin-bottom: rem(40);
+  }
+}
+
+.achivementsDetailsMvSwiperThumbs {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  @include mq(md) {
+    margin: initial;
+  }
+}
+
+.achivementsDetailsMvSwiperThumbs .swiper-slide {
+  width: rem(163);
+  @include mq(md) {
+  }
+}
+
+.achivementsDetailsMvSwiper .swiper-button-prev,
+.achivementsDetailsMvSwiper .swiper-button-next {
+  background: rgba(1, 0, 0, 1);
+  width: rem(50);
+  height: rem(50);
+  border-radius: rem(30);
+  @include mq(md) {
+  }
+}
+
+.achivementsDetailsMvSwiper .swiper-button-prev::after,
+.achivementsDetailsMvSwiper .swiper-button-next::after {
+  font-size: rem(25);
+  color: rgba(255, 234, 46, 1);
+  @include mq(md) {
+  }
+}
+
+.achivementsDetailsMv__modify {
+  max-width: rem(801);
+  width: 100%;
+  margin: 0 auto;
   @include mq(md) {
   }
 }
