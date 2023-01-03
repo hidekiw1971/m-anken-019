@@ -102,13 +102,47 @@ jQuery(function ($) {
   });
 
   // achievements-details.html swiper
-  const swiper = new Swiper(".achivementsDetailsMvSwiper", {
+  const achivementsDetailsMvSwiper = new Swiper(".achivementsDetailsMvSwiper", {
     loop: true,
+    loopedSlides: 9,
+    slidesPerView: 1,
+    centeredSlides: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
+  // achievements-details.html swiper thumbs
+  const achivementsDetailsMvSwiperThumbs = new Swiper(
+    ".achivementsDetailsMvSwiperThumbs",
+    {
+      loop: true,
+      loopedSlides: 9,
+      slidesPerView: 9,
+      centeredSlides: true,
+      spaceBetween: 24,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 8,
+        },
+      },
+      // thumbs: {
+      //   swiper: achivementsDetailsMvSwiper,
+      // },
+    }
+  );
+  achivementsDetailsMvSwiper.controller.control =
+    achivementsDetailsMvSwiperThumbs;
+  achivementsDetailsMvSwiperThumbs.controller.control =
+    achivementsDetailsMvSwiper;
 
   // ↓消さない
 });
