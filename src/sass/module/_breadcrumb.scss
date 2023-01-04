@@ -86,3 +86,13 @@
   @include mq(md) {
   }
 }
+
+// company-profile.html
+.breadcrumbCompanyProfile__modify {
+  @include mq(md) {
+    max-width: rem(1105);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: rem(115);
+  }
+}
