@@ -57,3 +57,50 @@
     justify-content: center;
   }
 }
+
+// blog.html
+.blogBreadcrumb {
+  margin-bottom: rem(85);
+  @include mq(md) {
+    margin-bottom: rem(115);
+  }
+}
+
+.blogAchievementsCategory {
+  margin-bottom: rem(37);
+  @include mq(md) {
+    margin-bottom: rem(39);
+  }
+}
+
+.blogList {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-rows: rem(410) rem(410) rem(410);
+    gap: rem(25) rem(25);
+    max-width: rem(1100);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.blogListCard:not(div:last-child) {
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin: 0;
+  }
+}
+
+.blogList__modify {
+  margin-bottom: rem(80);
+  @include mq(md) {
+  }
+}
+
+.blogListPagenavi.wp-pagenavi.wp-pagenavi__modify {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}

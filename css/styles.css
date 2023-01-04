@@ -450,6 +450,56 @@ select::-ms-expand {
   }
 }
 
+.blogBreadcrumb {
+  margin-bottom: 85px;
+  margin-bottom: 5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .blogBreadcrumb {
+    margin-bottom: 7.1875rem;
+  }
+}
+
+.blogAchievementsCategory {
+  margin-bottom: 37px;
+  margin-bottom: 2.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .blogAchievementsCategory {
+    margin-bottom: 2.4375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blogList {
+    display: grid;
+    grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+    grid-template-rows: 25.625rem 25.625rem 25.625rem;
+    gap: 1.5625rem 1.5625rem;
+    max-width: 68.75rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.blogListCard:not(div:last-child) {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .blogListCard:not(div:last-child) {
+    margin: 0;
+  }
+}
+
+.blogList__modify {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+.blogListPagenavi.wp-pagenavi.wp-pagenavi__modify {
+  display: block;
+  color: rgb(255, 255, 255);
+}
 .breadcrumb {
   font-size: 16px;
   font-size: 1rem;
@@ -514,6 +564,15 @@ select::-ms-expand {
   border: solid 1px rgb(255, 255, 255);
   display: inline-block;
 }
+@media screen and (min-width: 768px) {
+  .breadcrumbCompanyProfile__modify {
+    max-width: 69.0625rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 7.1875rem;
+  }
+}
+
 .btn {
   display: inline-block;
   white-space: nowrap;
@@ -816,6 +875,118 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.companyProfileDetail table th,
+.companyProfileDetail table td {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetail table th,
+  .companyProfileDetail table td {
+    font-size: 1rem;
+  }
+}
+
+.companyProfileDetail table {
+  border-spacing: 0;
+}
+
+.companyProfileDetail table tr {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.companyProfileDetail table th {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-right: 70px;
+  padding-right: 4.375rem;
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  white-space: nowrap;
+  line-height: 1.3125;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetail table th {
+    line-height: 1.6153846154;
+    letter-spacing: 0em;
+    padding-right: 6.5rem;
+    padding-top: 2.375rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+.companyProfileDetail table td {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  line-height: 1.8461538462;
+  letter-spacing: 0em;
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetail table td {
+    line-height: 1.5;
+    letter-spacing: 0.0625em;
+    padding-top: 2.375rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+.companyProfileDetail__wrapper {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+.companyProfileDetail__modify {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetail__modify {
+    max-width: 68.75rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.companyProfileDetailMap {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+  width: 100%;
+  padding-top: 80%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetailMap {
+    padding-top: 33.3636363636%;
+    max-width: 68.75rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 9.375rem;
+  }
+}
+
+.companyProfileDetailMap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .companyProfileDetailMap iframe {
+    max-width: 68.75rem;
+    width: 100%;
+  }
+}
+
 .contact {
   background: rgb(51, 51, 51);
 }
@@ -1782,9 +1953,15 @@ select::-ms-expand {
 }
 
 .mvSwiper-notice {
-  height: 370px;
-  height: 23.125rem;
+  height: 425px;
+  height: 26.5625rem;
 }
+@media screen and (min-width: 768px) {
+  .mvSwiper-notice {
+    height: 23.125rem;
+  }
+}
+
 .notice-mv.mv.swiper-slide img {
   height: 100%;
 }
