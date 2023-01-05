@@ -33,7 +33,9 @@
     max-width: rem(800);
     width: 100%;
     margin: 0 auto;
+    margin-bottom: rem(80);
   }
+  margin-bottom: rem(104);
 }
 
 .blogDetail__category > time,
@@ -72,18 +74,15 @@
 .blogDetail__contents > figure {
   position: relative;
   overflow: hidden;
-  @include mq(md) {
-  }
-}
-
-.blogDetail__contents > figure {
   content: "";
   padding-top: calc(251 / 375 * 100%);
   background: rgba(255, 255, 255, 1);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  margin-bottom: rem(24);
   @include mq(md) {
     margin: initial;
+    margin-bottom: rem(32);
   }
 }
 
@@ -92,6 +91,82 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
+  @include mq(md) {
+  }
+}
+
+.blogDetailSentence1 > p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16);
+  letter-spacing: calc(0.4em / 16);
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(32);
+  }
+}
+
+.blogDetailSentence > h2 {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: calc(2em / 20);
+  border-left: solid 3px rgba(255, 255, 255, 1);
+  padding-left: rem(9);
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(32);
+  }
+}
+
+.blogDetailSentence > h3 {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-size: rem(18);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: calc(2em / 18);
+  border-bottom: solid 3px rgba(255, 255, 255, 1);
+  padding-left: rem(9);
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(28);
+  }
+}
+
+.blogDetail__contents > ul > li {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  list-style: inside;
+  list-style-type: disc;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16);
+  letter-spacing: calc(0.4em / 16);
+  @include mq(md) {
+  }
+}
+
+.blogDetail__contents > ul {
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(32);
+  }
+}
+
+.blogDetail__contents > ol > li {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  list-style: inside;
+  list-style-type: decimal;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(35 / 16);
+  letter-spacing: calc(0.4em / 16);
   @include mq(md) {
   }
 }
