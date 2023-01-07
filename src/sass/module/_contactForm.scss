@@ -1,0 +1,39 @@
+@use "global" as *;
+.contactForm {
+  max-width: rem(1100);
+  width: 100%;
+  margin: 0 auto;
+  //   background: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.contactForm table {
+  text-align: left;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(25.9 / 14);
+  letter-spacing: calc(0.7em / 14);
+  color: rgba(255, 255, 255, 1);
+}
+
+.contactForm th {
+  padding-right: rem(50);
+  white-space: norwrap;
+}
+
+.contactForm input,
+.contactForm textarea {
+  border-radius: 0;
+  border: 1px solid rgba(1, 0, 0, 1);
+}
+
+.contactForm__wrapper {
+  margin: 0 rem(20);
+  @include mq(md) {
+  }
+}
+
+input[type="text"],
+textarea {
+}

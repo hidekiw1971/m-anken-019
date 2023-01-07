@@ -64,33 +64,25 @@ article > * + * {
   margin-top: 1em;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Blur images when they have no alt attribute */
 img:not([alt]) {
   filter: blur(10px);
 }
 
 /* フォームリセット */
-input,
-button,
-select,
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  font: inherit;
-  outline: none;
-}
+// input,
+// button,
+// select,
+// textarea {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   background: transparent;
+//   border: none;
+//   border-radius: 0;
+//   font: inherit;
+//   outline: none;
+// }
 
 textarea {
   resize: vertical;
@@ -98,7 +90,8 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  display: none;
+  // display: none;
+  display: block;
 }
 
 input[type="submit"],

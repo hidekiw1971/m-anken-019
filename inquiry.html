@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>ブログ記事詳細｜watabe-ya</title>
+  <title>お問い合わせ｜watabe-ya</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -231,152 +231,69 @@
   </div>
   <!-- /mobile menu -->
 
+  <!-- mv -->
+  <div class="mv notice-mv">
+    <div class="mv__filter"></div>
+    <div class="mv__contents-title">
+      <h2 class="mv__title">制作実績</h2>
+      <!-- <h3 class="mv__subTitle">サブタイトルが入ります</h3> -->
+    </div>
+    <div class="mv swiper mvSwiper-notice mvSwiper-achievements">
+      <div class="mv swiper-wrapper">
+        <div class="achievements-mv notice-mv mv swiper-slide">
+          <img src="./images/achievements-mv.png" alt="お知らせ">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /mv -->
+
   <!-- breadcrumb -->
-  <!-- <div class="breadcrumb breadcrumb__modify breadcrumb__achievementsModify breadcrumb__achivementsDetailsModify"> -->
-  <div class="blogDetailBreadcrumb breadcrumb">
+  <div class="breadcrumb breadcrumb__modify">
     <div class="breadcrumb_inner">
       <ul>
         <li><a href="#">トップ</a></li>
-        <li><a href="#">制作実績</a></li>
-        <li><a href="#">制作実績詳細</a></li>
+        <li><a href="#">お問い合わせ</a></li>
       </ul>
     </div>
   </div>
   <!-- /breadcrumb -->
 
-  <!-- blogDetail -->
-  <article class="blogDetail">
-    <div class="blogDetail__wrapper">
-      <div class="blogDetail__contents">
-        <h2>代りがしですはずははたして今にじっとないなかった。あたかも岩崎さんを挨拶非そう</h2>
-        <div class="blogDetail__category">
-          <time datetime="2020-06-13">2020/06/13</time>
-          <p>カテゴリ</p>
-        </div>
-        <figure>
-          <img src="./images/blogDetail-top.png" alt="blog detail">
-        </figure>
-        <div class="blogDetailSentence">
-          <div class="blogDetailSentence1">
-            <p>
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）
-            </p>
-          </div>
-          <h2>ドル・円オプション市場はまちまち。 短期物ではオプション売りが優勢となった一方で、3カ月物以降は買われた</h2>
-          <div class="blogDetailSentence1">
-            <p>
-              いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）親譲りの無鉄砲で小供の時から損ばかりして
-            </p>
-          </div>
-          <h3>別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に</h3>
-          <div class="blogDetailSentence1">
-            <p>
-              心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。
-            </p>
-          </div>
-        </div>
-        <figure>
-          <img src="./images/blogDetail-middle.png" alt="blog detail">
-        </figure>
-        <ul>
-          <li>そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。</li>
-          <li>そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時</li>
-        </ul>
-        <ol>
-          <li>つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を</li>
-          <li>おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）</li>
-        </ol>
-      </div>
+  <!-- contactForm -->
+  <!-- <div id="formWrap"> -->
+  <div class="contactForm">
+    <div class="contactForm__wrapper">
+      <form method="post" action="mail.php">
+        <table class="formTable">
+          <tr>
+            <th>※会社名</th>
+            <td><input size="20" type="text" name="会社名" /></td>
+          </tr>
+          <tr>
+            <th>※お名前</th>
+            <td><input size="20" type="text" name="お名前" /></td>
+          </tr>
+          <tr>
+            <th>※ふりがな</th>
+            <td><input size="20" type="text" name="ふりがな" /></td>
+          </tr>
+          <tr>
+            <th>※メールアドレス</th>
+            <td><input size="20" type="text" name="Email" /></td>
+          </tr>
+          <tr>
+            <th>※お問い合わせ内容<br /></th>
+            <td><textarea name="お問い合わせ内容" cols="30" rows="5"></textarea></td>
+          </tr>
+        </table>
+        <p>
+          <input type="submit" value="送信" />
+        </p>
+      </form>
     </div>
-  </article>
-  <!-- /blogDetail -->
-
-  <!-- achievements-details pagenation -->
-  <div class="wp-pagenavi wp-pagenavi__modify">
-    <a class="previouspostslink leftEnd" rel="prev" href="#">PREV</a>
-    <a class="nextpostslink rightEnd" rel="next" href="#">NEXT</a>
   </div>
-  <!-- /achievements-details pagenation -->
-
-  <!-- related article -->
-  <article class="relatedArticle relatedArticle__modify">
-    <div class="relatedArticle__wrapper">
-      <div class="relatedArticleContens">
-        <p>関連記事</p>
-        <!-- common parts cardx -->
-        <div class="relatedArticleCard__wrapper">
-          <div class="relatedArticleCard card card__layout">
-            <a href="#" class="card_link">
-              <figure class="card-photo">
-                <img src="./images/blog-01.png" alt="">
-              </figure>
-              <div class="card-contens">
-                <div class="card-title">タイトルが入ります。タイトルが入ります。</div>
-                <div class="card-description">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-                <div class="card-subContens">
-                  <div class="card-category">カテゴリ</div>
-                  <time class="card-datetime" datetime=2021-07-20 00:00>2021.07.20</time>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- /common parts cardx -->
-          <!-- common parts cardx -->
-          <div class="relatedArticleCard card card__layout">
-            <a href="#" class="card_link">
-              <figure class="card-photo">
-                <img src="./images/blog-01.png" alt="">
-              </figure>
-              <div class="card-contens">
-                <div class="card-title">タイトルが入ります。タイトルが入ります。</div>
-                <div class="card-description">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-                <div class="card-subContens">
-                  <div class="card-category">カテゴリ</div>
-                  <time class="card-datetime" datetime=2021-07-20 00:00>2021.07.20</time>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- /common parts cardx -->
-          <!-- common parts cardx -->
-          <div class="relatedArticleCard card card__layout">
-            <a href="#" class="card_link">
-              <figure class="card-photo">
-                <img src="./images/blog-01.png" alt="">
-              </figure>
-              <div class="card-contens">
-                <div class="card-title">タイトルが入ります。タイトルが入ります。</div>
-                <div class="card-description">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-                <div class="card-subContens">
-                  <div class="card-category">カテゴリ</div>
-                  <time class="card-datetime" datetime=2021-07-20 00:00>2021.07.20</time>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- /common parts cardx -->
-          <!-- common parts cardx -->
-          <div class="relatedArticleCard card card__layout">
-            <a href="#" class="card_link">
-              <figure class="card-photo">
-                <img src="./images/blog-01.png" alt="">
-              </figure>
-              <div class="card-contens">
-                <div class="card-title">タイトルが入ります。タイトルが入ります。</div>
-                <div class="card-description">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-                <div class="card-subContens">
-                  <div class="card-category">カテゴリ</div>
-                  <time class="card-datetime" datetime=2021-07-20 00:00>2021.07.20</time>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- /common parts cardx -->
-        </div>
-      </div>
-    </div>
-  </article>
-  <!-- /related article -->
+  <!-- </div> -->
+  <!-- /contactForm -->
 
   <!-- contentsBox2 contact -->
   <div class="contentsBox2 contact">
