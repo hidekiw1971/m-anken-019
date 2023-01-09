@@ -235,13 +235,15 @@
   <div class="mv notice-mv">
     <div class="mv__filter"></div>
     <div class="mv__contents-title">
-      <h2 class="mv__title">制作実績</h2>
+      <h2 class="mv__title">お問い合わせ</h2>
       <!-- <h3 class="mv__subTitle">サブタイトルが入ります</h3> -->
     </div>
-    <div class="mv swiper mvSwiper-notice mvSwiper-achievements">
+    <!-- <div class="mv swiper mvSwiper-notice mvSwiper-achievements"> -->
+    <div class="mv swiper mvSwiper-notice">
       <div class="mv swiper-wrapper">
-        <div class="achievements-mv notice-mv mv swiper-slide">
-          <img src="./images/achievements-mv.png" alt="お知らせ">
+        <!-- <div class="achievements-mv notice-mv mv swiper-slide"> -->
+        <div class="notice-mv mv swiper-slide">
+          <img src="./images/inquiry-mv.png" alt="お知らせ">
         </div>
       </div>
     </div>
@@ -261,33 +263,43 @@
 
   <!-- contactForm -->
   <!-- <div id="formWrap"> -->
-  <div class="contactForm">
+  <div class="contactForm contactForm__modify">
     <div class="contactForm__wrapper">
       <form method="post" action="mail.php">
         <table class="formTable">
           <tr>
+            <th></th>
+            <td class="xxxxx">※必要事項を入力してください。</td>
+          </tr>
+          <tr>
             <th>※会社名</th>
-            <td><input size="20" type="text" name="会社名" /></td>
+            <!-- <td><input size="60" type="text" name="会社名" placeholder="まめ太凶暴研究所" required /></td> -->
+            <td><input size="60" type="text" name="会社名" placeholder="まめ太凶暴研究所" id="formTableCorporate" /></td>
           </tr>
           <tr>
             <th>※お名前</th>
-            <td><input size="20" type="text" name="お名前" /></td>
+            <td><input size="60" type="text" name="お名前" placeholder="まめまめ太" id="formTableName" /></td>
           </tr>
           <tr>
             <th>※ふりがな</th>
-            <td><input size="20" type="text" name="ふりがな" /></td>
+            <td><input size="60" type="text" name="ふりがな" placeholder="まめまめた" id="formTableFrigana" /></td>
           </tr>
           <tr>
             <th>※メールアドレス</th>
-            <td><input size="20" type="text" name="Email" /></td>
+            <td><input size="60" type="text" name="Email" placeholder="mameta@gmail.com" id="formTableMail" /></td>
           </tr>
           <tr>
             <th>※お問い合わせ内容<br /></th>
-            <td><textarea name="お問い合わせ内容" cols="30" rows="5"></textarea></td>
+            <td><textarea name="お問い合わせ内容" cols="30" rows="5" placeholder="なんでもいいよ！" id="formTableTextarea"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="submit" value="送信" id="submitBtn" /></td>
           </tr>
         </table>
         <p>
-          <input type="submit" value="送信" />
+          <!-- <input type="submit" value="送信" /> -->
         </p>
       </form>
     </div>

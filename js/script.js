@@ -1,6 +1,5 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-
   var topBtn = $(".pagetop");
   topBtn.hide();
 
@@ -143,6 +142,49 @@ jQuery(function ($) {
     achivementsDetailsMvSwiperThumbs;
   achivementsDetailsMvSwiperThumbs.controller.control =
     achivementsDetailsMvSwiper;
+
+  $(function () {
+    // 全てのアラート文を非表示にする
+    $(".alert").hide();
+    // 送信ボタンをクリック
+    $("#submitBtn").click(function () {
+      // クリック時の処理
+      var sendFlog = true;
+
+      if (!$("#formTableCorporate").val()) {
+        // 入力がない：アラート文を表示
+        $("#formTableCorporate").css("background", "rgba(255,0,0,1)");
+        sendFlog = false;
+      }
+      if (!$("#formTableName").val()) {
+        // 入力がない：アラート文を表示
+        $("#formTableName").css("background", "rgba(255,0,0,1)");
+        sendFlog = false;
+      }
+      if (!$("#formTableFrigana").val()) {
+        // 入力がない：アラート文を表示
+        $("#formTableFrigana").css("background", "rgba(255,0,0,1)");
+        sendFlog = false;
+      }
+      if (!$("#formTableMail").val()) {
+        // 入力がない：アラート文を表示
+        $("#formTableMail").css("background", "rgba(255,0,0,1)");
+        sendFlog = false;
+      }
+      if (!$("#formTableTextarea").val()) {
+        // 入力がない：アラート文を表示
+        $("#formTableTextarea").css("background", "rgba(255,0,0,1)");
+        sendFlog = false;
+      }
+
+      // 変数sendFlogの値をチェック
+      if (sendFlog == false) {
+        // フォームが送信されないようにする
+        $(".xxxxx").css("color", "rgba(255,0,0,1)");
+        return false;
+      }
+    });
+  });
 
   // ↓消さない
 });

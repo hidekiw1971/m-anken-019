@@ -1,6 +1,6 @@
 @use "global" as *;
 .contactForm {
-  max-width: rem(1100);
+  max-width: rem(800);
   width: 100%;
   margin: 0 auto;
   //   background: rgba(255, 255, 255, 1);
@@ -19,7 +19,8 @@
 
 .contactForm th {
   padding-right: rem(50);
-  white-space: norwrap;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
 .contactForm input,
@@ -34,6 +35,9 @@
   }
 }
 
-input[type="text"],
-textarea {
+.contactForm__modify {
+  margin-bottom: rem(120);
+  @include mq(md) {
+    margin-bottom: rem(150);
+  }
 }

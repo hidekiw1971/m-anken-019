@@ -1195,8 +1195,8 @@ select::-ms-expand {
 }
 
 .contactForm {
-  max-width: 1100px;
-  max-width: 68.75rem;
+  max-width: 800px;
+  max-width: 50rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -1213,7 +1213,8 @@ select::-ms-expand {
 .contactForm th {
   padding-right: 50px;
   padding-right: 3.125rem;
-  white-space: norwrap;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
 .contactForm input,
@@ -1226,6 +1227,16 @@ select::-ms-expand {
   margin: 0 20px;
   margin: 0 1.25rem;
 }
+.contactForm__modify {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contactForm__modify {
+    margin-bottom: 9.375rem;
+  }
+}
+
 .contentsBox {
   display: inline-block;
   min-width: 375px;
@@ -1941,6 +1952,57 @@ select::-ms-expand {
 
 .inquiryForm {
   background: rgb(255, 255, 255);
+}
+.formTable {
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .formTable {
+    border-spacing: 0 2.8125rem;
+  }
+}
+
+input[type=submit],
+input[type=text],
+select,
+textarea,
+button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+}
+
+.formTable th,
+.formTable td {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .formTable th,
+  .formTable td {
+    display: table-cell;
+  }
+}
+
+.xxxxx {
+  color: rgb(1, 0, 0);
+  text-align: center;
 }
 .js-mobile__menu {
   position: fixed;

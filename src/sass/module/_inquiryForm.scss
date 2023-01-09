@@ -4,3 +4,50 @@
   @include mq(md) {
   }
 }
+
+.formTable {
+  margin: 0 auto;
+  @include mq(md) {
+    border-spacing: 0 rem(45);
+  }
+}
+
+input[type="submit"],
+input[type="text"],
+select,
+textarea,
+button {
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(25.9 / 14);
+  letter-spacing: calc(0.7em / 14);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: rem(10) 0;
+}
+
+.formTable th,
+.formTable td {
+  display: block;
+  @include mq(md) {
+    display: table-cell;
+  }
+}
+
+.xxxxx {
+  // color: rgba(255, 0, 0, 1);
+  color: rgba(1, 0, 0, 1);
+  text-align: center;
+  @include mq(md) {
+  }
+}
