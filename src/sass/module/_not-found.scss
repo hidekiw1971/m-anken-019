@@ -1,0 +1,52 @@
+@use "global" as *;
+.notFound__modify {
+  padding-top: rem(130);
+  margin-bottom: rem(120);
+  @include mq(md) {
+    padding-top: rem(200);
+    margin-bottom: rem(80);
+  }
+}
+
+.notFound__wrapper {
+  margin: 0 rem(20);
+}
+
+.notFound > div > h2,
+.notFound > div > dd {
+  color: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}
+
+.notFound > div > h2 {
+  font-size: rem(40);
+  font-weight: $normal;
+  line-height: calc(35 / 40);
+  letter-spacing: calc(2em / 40);
+  color: rgba(255, 234, 46, 0.3);
+  margin-bottom: rem(80);
+  @include mq(md) {
+    font-size: rem(60);
+    line-height: calc(35 / 60);
+    letter-spacing: calc(2em / 60);
+  }
+}
+
+.notFound > div > dd {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: normal;
+  letter-spacing: calc(2em / 20);
+  @include mq(md) {
+    font-size: rem(30);
+    line-height: calc(35 / 30);
+    letter-spacing: calc(2em / 30);
+  }
+}
+
+.notFound > div > dd > span {
+  @include mq(md) {
+    display: none;
+  }
+}
